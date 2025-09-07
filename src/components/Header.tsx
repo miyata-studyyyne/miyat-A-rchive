@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -6,53 +7,53 @@ const Header = () => {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <a
+            <Link
               href="/"
               className="text-2xl font-bold text-gray-800 hover:text-gray-600 transition-colors duration-200"
             >
               miyat-A-rchive
-            </a>
+            </Link>
           </div>
 
           <div className="hidden md:block">
             <ul className="ml-10 flex items-baseline space-x-4">
               <li>
-                <a
+                <Link
                   href="/works"
                   className="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
                 >
                   Works
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/blogs"
                   className="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
                 >
                   Blogs
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/milestone"
                   className="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
                 >
                   Milestone
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="contact"
                   className="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="portfolio"
                   className="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
-                ></a>
+                ></Link>
               </li>
             </ul>
           </div>

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 
 const GitHubIcon = () => (
@@ -41,7 +42,7 @@ const Footer = () => {
 
           {/* --- 右側: ソーシャルメディアリンク --- */}
           <div className="flex space-x-4">
-            <a
+            <Link
               href="https://github.com/your-username"
               target="_blank"
               rel="noopener noreferrer"
@@ -49,8 +50,8 @@ const Footer = () => {
               className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
             >
               <GitHubIcon />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://twitter.com/your-username"
               target="_blank"
               rel="noopener noreferrer"
@@ -58,7 +59,7 @@ const Footer = () => {
               className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
             >
               <TwitterIcon />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
