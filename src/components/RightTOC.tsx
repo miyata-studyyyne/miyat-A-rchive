@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const RightTOC = () => {
   return (
-    <nav className="sticky top-0 w-1/5 h-screen overflow-y-auto bg-blue-100 p-4">
-      <div>b</div>
+    <nav className="flex sticky top-0 w-1/5 h-screen overflow-y-auto bg-gray-100 p-4">
+      <div>right</div>
     </nav>
   );
 };

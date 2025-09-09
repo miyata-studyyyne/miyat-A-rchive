@@ -5,7 +5,7 @@ import Image from "next/image";
 const LeftNav = () => {
   return (
     <nav className="flex sticky top-0 w-1/5 h-screen overflow-y-auto bg-gray-100 p-4">
-      <div>a</div>
+      <div>leftnav</div>
     </nav>
   );
 };
