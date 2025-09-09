@@ -29,37 +29,37 @@ export default function RootLayout({
     <html lang="ja" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body
         className="
-        // body の全ての子要素を対象に、要素の最小の高さをビューポートの高さに設定
-        *:min-h-dvh   
-        // body の要素の display プロパティを gridに設定  
+        [&>*]:min-h-dvh   
         grid 
-        // gridの列を1列に設定。デフォルトのレイアウトとして適用される
         grid-cols-1
-        // md とはレスポンシブブレークポイントの一つ
-        // 画面幅 768px 以上の場合、後続のクラスに適用
-        md:grid-cols-[20%_1fr_20%]
-        // 背景色はglobal.cssで定義した色を使用
+        md:grid-cols-[1fr_3fr_1fr]
         bg-[blanchedalmond]"
       >
+        {/* body の全ての子要素を対象に、要素の最小の高さをビューポートの高さに設定
+            body の要素の display プロパティを gridに設定  
+            gridの列を1列に設定。デフォルトのレイアウトとして適用される
+            md とはレスポンシブブレークポイントの一つ
+            画面幅 768px 以上の場合、後続のクラスに適用
+            景色はglobal.cssで定義した色を使用 */}
         <aside
           className="
-          // hiddenにすることにより、画面幅が768px未満の場合にこのaside要素が表示されなくなる
           hidden
-          // md: blockにすることにより、画面幅が768px以上の場合にこのaside要素が表示されるようになる
           md:block
-          // 要素がスクロールに応じて特定の位置でビューポートに固定される
           md:sticky
-          // sticky要素の上端をビューポートの上端から0ピクセルの位置に設定
           md:top-0
-          // 要素が配置されるコンテナの交差軸に沿った位置を開始位置に設定
           md:self-start
-          // 要素の高さをビューポートの高さに設定
           md:h-dvh
-          // 要素の内容が要素の高さを超えた場合に垂直方向にスクロール可能にする
           overflow-y-auto
-          // 要素の右側に1ピクセルの境界線を追加
           border-r"
         >
+          {/* hiddenにすることにより、画面幅が768px未満の場合にこのaside要素が表示されなくなる
+            md: blockにすることにより、画面幅が768px以上の場合にこのaside要素が表示されるようになる
+            要素がスlクロールに応じて特定の位置でビューポートに固定される
+            sticky要素の上端をビューポートの上端から0ピクセルの位置に設定
+            要素lが配置されるコンテナの交差軸に沿った位置を開始位置に設定
+            要素のl高さをビューポートの高さに設定
+            要素のl内容が要素の高さを超えた場合に垂直方向にスクロール可能にする
+            要素の右l側に1ピクセルの境界線を追加 */}
           <LeftNav />
         </aside>
 
