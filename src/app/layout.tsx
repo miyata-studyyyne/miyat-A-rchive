@@ -45,12 +45,12 @@ export default function RootLayout({
           className="
           hidden
           md:block
-          md:sticky
-          md:top-0
           md:self-start
           md:h-dvh
           overflow-y-auto
-          border-r"
+          border-r
+          left-aside
+          "
         >
           {/* hiddenにすることにより、画面幅が768px未満の場合にこのaside要素が表示されなくなる
             md: blockにすることにより、画面幅が768px以上の場合にこのaside要素が表示されるようになる
