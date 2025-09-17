@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import LeftNav from "@/components/LeftNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,19 +36,11 @@ export default function RootLayout({
             max-w-[var(--container-max)]
             mx-auto
             grid
-            grid-cols-[1fr_var(--col-center)_1fr]
+            grid-cols-[1fr_3fr_1fr]
             min-h-dvh
           "
         >
-          <aside
-            className="
-              bg-[#FFF3DC]
-              border-r 
-              border-[#EBDDC3]
-            "
-          >
-            left
-          </aside>
+          <LeftNav />
           <main className="min-w-0">
             <div
               className="
