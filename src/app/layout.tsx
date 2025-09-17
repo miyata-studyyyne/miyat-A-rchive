@@ -31,35 +31,40 @@ export default function RootLayout({
       >
         <div
           className="
-            min-h-dvh 
-            w-[1440px] 
-            mx-auto 
-            grid 
-            grid-cols-[350px_740px_350px]
+            w-full
+            max-w-[var(--container-max)]
+            mx-auto
+            grid
+            grid-cols-[1fr_var(--col-center)_1fr]
+            min-h-dvh
           "
         >
           <aside
-            className="\
+            className="
               bg-[#FFF3DC]
-              border-r
+              border-r 
               border-[#EBDDC3]
             "
           >
             left
           </aside>
-          <main
-            className="
-              min-w-0
+          <main className="min-w-0">
+            <div
+              className="
+              w-full
+              min-h-dvh
               bg-[#FBF0DB]
-            "
-          >
-            {children}
+              "
+            >
+              {children}
+            </div>
           </main>
           <aside
             className="
-             bg-[#FFF3DC]
+              w-full
+              bg-[#FBF0DB]
               border-l
-             border-[#EBDDC3]
+              border-[#EBDDC3]
           "
           >
             right
